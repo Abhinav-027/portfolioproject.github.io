@@ -4,36 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header Practise</title>
+  <title>About | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body>
   <header>
     <div class="navbar">
       <div class="logo">
-        <h3>RAGE</h3>
+        <h3>ค乃ђเภคש</h3>
       </div>
       <div class="nav-list" id="nav-add">
         <ul>
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#skill">Dream</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
        
       <div class="hamburger">
-        <a onclick="responsive_menu()"><i class="fa fa-clipboard" aria-hidden="true"></i></a>
+        <a onclick="responsive_menu()"><i class="fas fa-bars"></i></a>
       </div>
 
     </div>
 
     <div class="land">
-      <h1>Find your Broom</h1>
-      <h3>Ping Me Please! </h3>
-      <button><a href="https://www.facebook.com/profile.php?id=100004942485779" style="text-decoration : none">FOLLOW ME</a></button>
+      <h1>Howdy! I am <span class="Myname">Abhinav</span></h1>
+      <h2>Front-end Developer</h2>
+      <h2 class="jaa">I <span class="txt-rotate"
+        data-period="2000"
+        data-rotate='[ "Design.","Code.","Optimize." ]'></span></h2>
+      <button><a href="#about">Start</a></button>
     </div>
   </header>
 
@@ -43,111 +52,110 @@
 
   <div class="intro">
     <div class="image">
-      <img src="asa.jpg" alt="Abhinav" title="Kumar Abhinav">
+      <img src="../Project 1/asa.jpg" alt="Abhinav" title="Kumar Abhinav">
     </div>
     <div class="brief">
-      <h1>Want to know where it <span>started?</span></h1>
-      <h2>All details below</h2>
+      <h1>Want to know about <span>me?</span></h1>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchange.
+       I am from Patna and just a final year student at Sikkim Manipal Institute of Technology pursuing B.tech in Information Technology. <br><br>
+       Passionate about Front-End Web Development I have developed many projects with fundamentals of web dev front-end part.
+       All my projects are mentioned below, do check them out.<br><br>
+       If you like my project do follow me on my social handles and message me! :)<br><br>
       </p>
+      <h3>
+        This Quote gets me going thought to share with you:<br></h3>
+        <p class = "Quote"><span>" Keep It Going Even If It's Rough! "</span></p>
+      
+    </div>
+  </div>
+</div>
+<!-- <img src="https://img.icons8.com/dusk/128/000000/java-coffee-cup-logo.png"/>
+<img src="https://img.icons8.com/clouds/128/000000/web-settings.png"/>
+<img src="https://img.icons8.com/cotton/128/000000/cloud-development.png"/> -->
+
+<div class="skills" id="skill">
+    <h4 id="skillhead"><span class="headskill">SKILLS</span> ACQUIRED</h4>
+    <div class="skillbox">
+      <div class="skill1">
+       <img src="https://img.icons8.com/dusk/128/000000/java-coffee-cup-logo.png" alt="Java">
+       <h4>Programming Language</h4>
+       <p>C C++ JAVA</p>
+      </div>
+
+      <div class="skill2">
+        <img src="https://img.icons8.com/clouds/128/000000/web-settings.png" alt="Java">
+        <h4>Front-End Technologies</h4>
+        <p>HTML CSS JAVASCRIPT</p>
+      </div>
+
+      <div class="skill3">
+       <img src="https://img.icons8.com/cotton/128/000000/cloud-development.png" alt="Java">
+       <h4>FRONTEND FRAMEWORK</h4>
+         <p>BOOTSTRAP4</p>
+     </div>
+    </div>
+</div>
+
+<div class="projects" id="projects">
+  <h1><span>PROJECTS</span> LEARNED</h1>
+  <div class="projectbox">
+    <div class="box2">
+     <img src="./images/picture1.png" alt="">
+     <h4 id="p1"><a href="#">Portfolio Project</a></h4>
+     <p id="p2"><a href="#">Responsive Website</a></p>
+    </div>
+    <div class="box2">
+      <img src="./images/picture2.png" alt="">
+      <h4 id="p1"><a href="https://www.goekip.in">GoEKIP Website</a></h4>
+      <p id="p2"><a href="https://www.goekip.in">Wordpress Website</a></p>
+    </div>
+    <div class="box2">
+      <img src="./images/Picture3.png" alt="">
+      <h4 id="p1"><a href="#">NotesTaking Project</a></h4>
+      <p id="p2"><a href="#">Made by JavaScript</a></p>
+    </div>
+    <div class="box2">
+      <img src="./images/picture4.png" alt="">
+      <h4 id="p1"><a href="#">Projects</a></h4>
+      <p id="p2"><a href="#" >Projects for JavaScript</a></p>
     </div>
   </div>
 </div>
 
-  <div class="skill" id="skill">
-   <h1>Dream</h1>
-    <div class="allcard">
-   <div class="card">
-    <div class="card-img">
-      <img src="./download.png" alt="React">
-    </div>
-    <div class="card-title">
-       <h4>React Js</h4>
-       <p>Simple and Unique</p>
-    </div>
+<div class="form" id="contact"> 
+   <h3><span>Contact</span> ME!</h3>
+  <form>
+    <label for="Name" class="label1">Enter Your Name</label>
+    <input type="text" class="labelx">
+
+    <label for="City" class="label2">City</label>
+    <input type="text" class="labely">
+
+    <label for="Email" class="label3">Email ID</label>
+    <input type="text" class="labelz">
+     
+    <label for="Question" class="label4">Querry</label>
+    <textarea rows = "5" cols = "60" name = "description">
+      Enter details here...
+   </textarea>
+    
+   <div class="button">
+    <button>SUBMIT</button>
    </div>
+  </form>
 
-   <div class="card">
-    <div class="card-img">
-      <img src="N.png" alt="React">
-    </div>
-    <div class="card-title">
-       <h4>HTML,CSS & JS</h4>
-       <p>Intermediate Level</p>
-    </div>
-   </div>
-
-   <div class="card">
-    <div class="card-img">
-      <img src="./download.png" alt="React">
-    </div>
-    <div class="card-title">
-       <h4>BOOTSTRAP</h4>
-       <p>Beginner</p>
-    </div>
-   </div>
-
-   
-   <div class="card">
-    <div class="card-img">
-      <img src="N.png" alt="React">
-    </div>
-    <div class="card-title">
-       <h4>Human Values</h4>
-       <p>Intermediate</p>
-    </div>
-   </div>
-
-  </div>
-</div>
-
-
-<div class="download">
-  <div class="headi">
-  <h1>Need My Projects or CV :)</h1>
-  </div>
-  <div class="flex">
-  <button class="project">Projects</button>
-  <button class="CV"><a href="https://drive.google.com/drive/folders/1F2Skfs4dNWJTK5Sxb7Wg3mk8SJQfX2OC?usp=sharing" style="text-decoration : none">Resume</a></button>
-  </div>
-</div>
-
-
-<div class="contact" id="contact">
-  <h1>Contact Me</h1>
-<form action="#">
-  <label for="namee">First Name</label>
-  <input type="text" id="namee" name="namee" placeholder="Your name..">
-
-  <label for="branch">Branch</label>
-  <input type="text" id="branch" name="branch" placeholder="Yur Branch..">
-  <label for="country">Country</label>
-  <select name="country" id="country">
-    <option value="australia">Australia</option>
-    <option value="india">India</option>
-    <option value="USA">USA</option>
-    <option value="Japan">Japan</option>
-  </select>
-
-  <input type="submit" value="SUBMIT" class="submit">
-</form>
 </div>
 
 <footer>
   <div class="logo-left">
-    <h3>RAGE</h3>
-    <p><span>I am just Learning</span> to build things So Bear it!</p>
+    <h3>ค乃ђเภคש</h3>
+    <p><span>Want to chat?</span> I'll buy the Coffee!<br>connect through Socials</p>
   </div>
 
   <div class="social-right">
-    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <i class="fa fa-telegram" aria-hidden="true"></i>
-    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+   <a href="https://www.facebook.com/profile.php?id=100004942485779"><i class="fab fa-facebook"></i></a>
+   <a href="https://www.instagram.com/_always_grinding_/"><i class="fab fa-instagram"></i></a>
+   <i class="fab fa-youtube-square"></i>
   </div>
 
 </footer>
