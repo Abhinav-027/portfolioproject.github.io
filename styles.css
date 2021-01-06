@@ -3,12 +3,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
    scroll-behavior: smooth;
 }
 
 a{
     text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 ul{
@@ -88,9 +91,11 @@ header .navbar .hamburger i{
 /* landing strikes */
 
 .land{
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    /* background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+    background: url(./cool-background\ \(2\).svg);
     background-size: cover;
+    background-blend-mode: darken;
     height: 88vh;
     background-position: center;
     display: flex;
@@ -99,7 +104,7 @@ header .navbar .hamburger i{
     align-items: center;
 }
 
-.land h1,h3{
+.land h1,h3,h2{
     color: black;
     margin-bottom: 0.7rem;
 }
@@ -110,6 +115,12 @@ header .navbar .hamburger i{
     padding-bottom: .2rem;
     text-transform: capitalize;
 }
+.land .Myname{
+    background: -webkit-linear-gradient(#F2994A,#F2C94C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
 
 .land h3{
    font-size: 2rem;
@@ -119,9 +130,7 @@ header .navbar .hamburger i{
 
 .land button{
     font-weight: 600;
-    padding: 10px 30px;
-   
-    color: black;
+    padding: 5px 10px;
     background-color: white;
     border: 5px solid black;
     border-radius: 20px;
@@ -130,19 +139,32 @@ header .navbar .hamburger i{
 }
 .land button:hover{
     font-weight: 600;
-    padding: 10px 30px;
-    color: white;
+    padding: 5px 10px;
     background-color: black;
     border: 5px solid black;
     transition: 0.6s ease;
     cursor: pointer;
 }
 
+.land button a{
+    color: black;
+    padding: 10px 30px;
+}
+
+.land button a:hover{
+    color: white;
+    padding: 10px 30px;
+}
+
+.land .jaa{
+    color: red !important;
+}
+
 /* landing strikes over */
 
 /* intro part */
  .about{
-    background: rgba(0,0,0,0.8);
+    background: black;
     padding: 2.5rem;
  }
 .intro{
@@ -153,7 +175,7 @@ header .navbar .hamburger i{
     width: 39.39%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
     transition: 0.6s ease;
-    border: 2px solid black;
+    border: 2px solid white;
     margin-right: 1.5rem;
 }
 .intro .image img{
@@ -178,8 +200,11 @@ header .navbar .hamburger i{
     word-spacing: 1px; 
 }
 .intro .brief span{
-    color: red;
+    background: -webkit-linear-gradient(#F2994A,#F2C94C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .intro .brief h2{
     color: white;
     margin-bottom: 0.6rem;
@@ -189,12 +214,27 @@ header .navbar .hamburger i{
     text-align: left;
 }
 
+.intro .brief h3 {
+    color: white;
+    font-size: 1rem;
+
+}
+
+.intro .brief .Quote{
+    text-align: center;
+    font-size: 1.4rem !important;
+    font-weight: bold;
+
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
 .intro .brief p{
     color: white;
     text-align: justify;
-    word-spacing: 1.4px;
+    word-spacing: 0.4px;
     line-height: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.1px;
     font-weight: 400;
 }
 #about{
@@ -208,213 +248,238 @@ header .navbar .hamburger i{
 
 .about h1 #large {
     font-size: 4rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     color: red;
-}
-.container{
-    background-color: ;
-}    
+}  
 /* intro part over */
 
 /* Skills Section start */
 
-.skill{
+.skills{background-color: #152a94; height: 80vh;}
 
-    height: 70vh;
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-     /*background-color: #FFFFFF;
-    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);*/
-}
-.skill h1{
-    padding: 2rem 0;
+.skills h4{
     text-align: center;
-    color: black;
-    letter-spacing: 2px;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.allcard{
+#skillhead{
+    color: white !important;
+}
+
+.skillbox{
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
 }
 
-.card{
-    margin-right: 30px;
+.skill1, .skill2, .skill3{
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    color: white;
+}
+
+
+.skill1 p{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.skill2 p{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.skill3 p{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.skillbox p{
+   padding-bottom: 40px;
+    
+}
+
+.skill1:hover{
+    background-color: white;
+    color: black;
+    transition: 0.6s ease-in;
+    border: 1px solid yellow;
+}
+
+.skill2:hover{
+    background-color: white;
+    color: black;
+    transition: 0.6s ease-in;
+    border: 1px solid yellow;
+}
+
+.skill3:hover{
+    background-color: white;
+    color: black;
+    transition: 0.6s ease-in;
+    border: 1px solid yellow;
+}
+
+.skill1 .info:hover{
+    color: black;
+}
+
+.headskill{color: yellow; padding-bottom: 5px; border-bottom: 2px solid white;}
+
+/* skills Section Over */
+
+/* Projects */
+.projects{
+    height: 60vh;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
     overflow: hidden;
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-    transition: 0.6s ease;
-  }
-
-.allcard .card{
-   border: 3px solid black;
-}
-
-.allcard .card .card-img img{
-   width: 100%;
-   margin: 0;
-}
-
-.allcard .card .card-title{
-    padding: 30px 50px;
-    background-color: white;
-    margin-top: -4px;
-    border-top: 3px solid black;
-}
-
-.card .card-title h4{
-    text-align: center;
-    font-size: 1.1rem;
-    text-transform: capitalize !important;
-    margin-bottom: 1.5px;
-    text-decoration: underline;
-}
-.card .card-title p{
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-/* skills section part over */
-
-/* Download CV here */
-
-.download
-{
-    margin: auto;
-    width: 100%;
-    height: 40vh;
-    background: rgba(0,0,0,0.8);
-    position: relative;
-}
-
-.download h1{
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    color: white;
-}
-
-.download .flex{
-    height: 40vh;
+.projectbox{
     display: flex;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.download .CV{
-    font-weight: 600;
-    padding: 10px 30px;
-   margin-top: 2rem;
+.projectbox .box2{
+   border: 3px solid black;
+   overflow: hidden;
+   height: 40vh;
+   background-color: black;
+}
+
+.projectbox .box2 img{
+    border-bottom: 3px solid black;
+    height: 29vh;
+}
+
+.projects h1{
+    text-align: center;
+    padding-top: 20px;
     color: black;
-    background-color: white;
-    border: 5px solid black;
-    border-radius: 14px;
-    transition: 0.6s ease;
-    cursor: pointer;
+    font-size: 30px;
 }
 
-.download .CV:hover{
-    font-weight: 600;
-    padding: 10px 30px;
-   margin-top: 2rem;
+.projects .projectbox .box2 #p1, #p2 {
+    text-align: center;
+    padding: 4px;
+}
+
+.projects .projectbox .box2 #p1 a{
+   font-size: 18.3px;
+   font-weight: bold;
+   padding-top: 8px !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+ color: #c31432;
+    
+}
+
+.projects span{
+    color: red;
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+}
+
+.projects .projectbox .box2 #p2 a{
+    font-size: 13.3px;
     color: white;
+}
+
+.projects .projectbox .box2:hover{
     background-color: black;
-    border: 5px solid black;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.8);
     transition: 0.6s ease;
-    cursor: pointer;
+}
+/* Projects Over */
+
+/* form shuru */
+
+.form{
+    height: 75vh;
+    background-color: #152a94;
+    
+   
 }
 
-.download .project{
-   margin-right: 1.5rem;
-   font-weight: 600;
-    padding: 10px 30px;
-    margin-top: 2rem;
-    color: black;
-    background-color: white;
-    border: 5px solid black;
-    border-radius: 14px;
-    transition: 0.6s ease;
-    cursor: pointer;
-}
-
-.download .project:hover{
-    font-weight: 600;
-    padding: 10px 30px;
-   margin-top: 2rem;
+.form h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
     color: white;
-    background-color: black;
-    border: 5px solid black;
-    transition: 0.6s ease;
-    cursor: pointer;
+    text-transform: uppercase;
 }
-
-
-
-/* download section over */
-
-/* contact section start */
 
 form{
-    width: 70%;
-    margin:auto;
-}
-label{
-    display: block;
-}
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-      display: block;
-    width: 20%;
-    background-color: white;
-    color: black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    border: 6px solid black;
-  }
-  
-  input[type=submit]:hover {
-    background-color: black;
-    color: white;
-    transition: 0.6s ease;
-    font-weight: bolder;
-  }
-  .contact h1{
-      text-align: center;
-  }
-  .contact {
-    border-radius: 5px;
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+    border: 2px solid white;
     padding: 20px;
-  }
-
-
-/*contact form over */
-
-footer{
-    height: 23vh;
-    background: rgba(0,0,0,0.8);
 }
 
-footer .logo-left{
-    margin: 3rem 2rem;
-    float: left;
+form label{
+    padding-top: 15px;
+    margin-left: 160px;
+    padding-bottom: 5px;
+    color: yellow;
+    font-size: 18px;
+}
+
+form .button button{
+    padding: 10px;
+    font-size: 13px;
+    margin: 20px 0 0 157px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+form .button button:hover{
+ 
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: 1s ease;
+
+}   
+.form span{
+    color: yellow;
+}
+
+.form form .labelx, .labely, .labelz{
+    width: 49%;
+    margin: auto;
+}
+
+.form form textarea{
+    width: 50%;
+   margin: auto;
+}
+
+/* form End */
+
+
+
+footer{height: 27vh; background: black;}
+
+footer .logo-left{margin: 3rem 1rem; float: left !important; }
+footer .logo-left p{
+
+    text-align: start;
 }
 
 footer .logo-left h3{
@@ -427,10 +492,12 @@ footer .logo-left h3{
 
 footer .logo-left p{
     color: white;
+    padding-top: 10px !important;
 }
 
 footer .logo-left p span{
-    color: #21D4FD;
+    color: red;
+    font-weight: bold;
 }
 
 footer .social-right{
@@ -446,20 +513,20 @@ footer .social-right i{
     font-size: 35px;
 }
 
-footer .social-right .fa-facebook-official{
-    color: skyblue;
+footer .social-right .fa-facebook{
+    color: #4267B2;
+    padding-right: 5px;
 }
 
 footer .social-right .fa-instagram{
-   color: red;
+   color: white;
+   padding-right: 5px;
 }
 
-footer .social-right .fa-telegram{
-  color: skyblue;
-}
 
-footer .social-right .fa-youtube-play{
- color: red;
+footer .social-right .fa-youtube-square{
+ color: #FF0000;
+ padding-right: 5px;
 }
 
 /* All Media Properties */
@@ -542,6 +609,7 @@ footer .social-right .fa-youtube-play{
     }
 
     .about .intro .image img{
+        background-image: none;
         height: 100%;
         width: 100%;
         transition: 0.6s ease;
@@ -565,63 +633,61 @@ footer .social-right .fa-youtube-play{
     .about .intro .brief p{
         font-size: 0.8rem;
     }
+    
+    .about .intro .Quote{
+        font-size: 1rem !important;
+    }
 
+    .skills{
+        height: 180vh;
+        overflow: hidden;
+    }
 
-    .skill{
+    .skillbox{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;  
+     height: 90%;
+    }
+
+    .skillbox{
+        margin-top: 30px !important;
+    }
+
+    .skills h4{
+        font-size: 20.4px;
+    }
+ 
+    .skillbox{
+        margin: -20px;
+    }
+       
+    .projects{
+        height: 250vh;
+    } 
+    .projects .projectbox{
+        flex-direction: column;
         height: 100%;
     }
 
-    .allcard{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .allcard .card{
-        margin-bottom: 2rem;
-    }
- 
-    .download{
-       height: 50vh;
-       width: 100%;
-       position: relative;
-    }
-
-    .download .headi {
-        width: 100%;
-    }
-
-    .download .headi h1{
-        font-size: 1.5rem;
-        text-align: left !important;
-        margin-left: -80px;
-    }
-    .download .flex .project{
-        margin-top: 6rem !important;
-    }
-
-    .download .flex .CV{
-        margin-top: 6rem;
-    }
-     
-     .contact .submit{
-         width: 30%;
-        margin: 0;
-        padding: 0;
-
+     form label{
+         margin-left: 100px;
      }
-
+     form{
+        width: 90%;    
+     }
+     
     footer{
         display: flex;
         flex-direction: column;
-        height: 100%;
         justify-content: center;
         align-items: center;
+        height: 50vh;
     }
 
-    footer .logo-left{
-        margin-bottom: -20px;
+    footer{ 
+       padding-top: 20px;
+      margin-bottom: -10px;
     }
 
 
